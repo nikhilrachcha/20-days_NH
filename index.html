@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Internship Progress - Nikhil Rachcha" />
-  <title>Nikhil Rachcha | Internship Progress</title>
+  <meta name="description" content="NH — 20 Days | 20 Technologies - Internship Challenge by Nikhil Rachcha" />
+  <title>NH — 20 Days | 20 Technologies | Nikhil Rachcha</title>
   <style>
-    /* ---------- Global Styles ---------- */
+    /* ---------- Global ---------- */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-family: "Segoe UI", Roboto, sans-serif;
     }
 
     body {
-      background: #f5f7fa;
+      background: #f4f7fb;
       color: #222;
       display: flex;
       flex-direction: column;
@@ -24,96 +24,88 @@
 
     a {
       text-decoration: none;
-      color: inherit;
+      color: #0078d4;
+      font-weight: 500;
     }
 
     /* ---------- Header ---------- */
     header {
-      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      background: linear-gradient(135deg, #0078d4, #00b4d8);
       color: #fff;
-      padding: 2rem 1rem;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      padding: 2rem 1rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     }
 
     header h1 {
       font-size: 2rem;
-      margin-bottom: 0.5rem;
+      letter-spacing: 0.5px;
     }
 
     header p {
       font-size: 1rem;
       opacity: 0.9;
+      margin-top: 0.5rem;
     }
 
-    /* ---------- Intro Section ---------- */
-    section.intro {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #ffffff;
-      margin: 1rem auto;
+    /* ---------- Container ---------- */
+    .container {
+      width: 90%;
       max-width: 900px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: 2rem auto;
+      flex: 1;
     }
 
-    section.intro h2 {
-      color: #0077b6;
-      margin-bottom: 0.5rem;
+    /* ---------- Card ---------- */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
     }
 
-    section.intro p {
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    }
+
+    .card h2 {
+      color: #0078d4;
+      margin-bottom: 0.8rem;
+    }
+
+    .card p {
       line-height: 1.6;
       color: #333;
-      max-width: 700px;
-      margin: 0 auto;
     }
 
-    /* ---------- Days Section ---------- */
-    main {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 2rem 1rem;
+    ul {
+      list-style: none;
+      padding: 0;
     }
 
-    .days-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-      width: 100%;
-      max-width: 1000px;
-    }
-
-    .day-card {
-      background: #ffffff;
-      border-radius: 10px;
-      text-align: center;
-      padding: 1.5rem 1rem;
-      transition: all 0.3s ease;
+    ul li {
+      background: #f9fbfd;
       border: 1px solid #e0e0e0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      margin: 0.4rem 0;
+      transition: 0.3s;
     }
 
-    .day-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    ul li:hover {
+      background: #e6f7ff;
       border-color: #00b4d8;
-    }
-
-    .day-card a {
-      font-weight: 600;
-      color: #0077b6;
-      font-size: 1.1rem;
-      display: block;
+      transform: translateX(3px);
     }
 
     /* ---------- Footer ---------- */
     footer {
       text-align: center;
       padding: 1rem;
-      background: #0077b6;
+      background: #0078d4;
       color: #fff;
       font-size: 0.9rem;
     }
@@ -123,8 +115,8 @@
       header h1 {
         font-size: 1.6rem;
       }
-      .day-card a {
-        font-size: 1rem;
+      .card {
+        padding: 1.2rem;
       }
     }
   </style>
@@ -132,44 +124,62 @@
 <body>
 
   <header>
-    <h1>Nikhil Rachcha</h1>
-    <p>Email: <a href="mailto:rachchanikhil123@gmail.com" style="color: #fff; text-decoration: underline;">rachchanikhil123@gmail.com</a></p>
-    <p>B.Tech in Information Technology | CCIE Security Student</p>
+    <h1>NH — 20 Days | 20 Technologies</h1>
+    <p>Internship Challenge — Introduction Page</p>
   </header>
 
-  <section class="intro">
-    <h2>Career Goal</h2>
-    <p>
-      I am an aspiring <strong>Cybersecurity and Network Engineer</strong> passionate about designing, securing, and automating enterprise-grade infrastructures. 
-      This internship allows me to gain hands-on experience with virtualization, routing, VPNs, firewalls, and automation tools as part of my journey toward <strong>CCIE Security</strong> certification.
-    </p>
-  </section>
+  <div class="container">
 
-  <main>
-    <div class="days-container">
-      <!-- Generate links for Day 1–20 -->
-      <div class="day-card"><a href="days/day-01.html">Day 01</a></div>
-      <div class="day-card"><a href="days/day-02.html">Day 02</a></div>
-      <div class="day-card"><a href="days/day-03.html">Day 03</a></div>
-      <div class="day-card"><a href="days/day-04.html">Day 04</a></div>
-      <div class="day-card"><a href="days/day-05.html">Day 05</a></div>
-      <div class="day-card"><a href="days/day-06.html">Day 06</a></div>
-      <div class="day-card"><a href="days/day-07.html">Day 07</a></div>
-      <div class="day-card"><a href="days/day-08.html">Day 08</a></div>
-      <div class="day-card"><a href="days/day-09.html">Day 09</a></div>
-      <div class="day-card"><a href="days/day-10.html">Day 10</a></div>
-      <div class="day-card"><a href="days/day-11.html">Day 11</a></div>
-      <div class="day-card"><a href="days/day-12.html">Day 12</a></div>
-      <div class="day-card"><a href="days/day-13.html">Day 13</a></div>
-      <div class="day-card"><a href="days/day-14.html">Day 14</a></div>
-      <div class="day-card"><a href="days/day-15.html">Day 15</a></div>
-      <div class="day-card"><a href="days/day-16.html">Day 16</a></div>
-      <div class="day-card"><a href="days/day-17.html">Day 17</a></div>
-      <div class="day-card"><a href="days/day-18.html">Day 18</a></div>
-      <div class="day-card"><a href="days/day-19.html">Day 19</a></div>
-      <div class="day-card"><a href="days/day-20.html">Day 20</a></div>
+    <!-- About Me -->
+    <div class="card">
+      <h2>About Me</h2>
+      <p><strong>Name:</strong> Nikhil Rachcha</p>
+      <p><strong>Email:</strong> <a href="mailto:rachchanikhil123@gmail.com">rachchanikhil123@gmail.com</a></p>
+      <p>I have completed my <strong>B.Tech in Information Technology</strong> and am currently pursuing <strong>CCIE Security</strong> training.  
+      My goal is to become a <strong>Network Security Engineer</strong> specializing in technologies such as SD-WAN, VPNs, and Enterprise Firewalls.</p>
+
+      <p>As part of my <strong>CCIE Security Learning Path</strong>, I’m mastering Cisco ASA, Firepower FTD, VPNs, and Identity Services, while also exploring <strong>Palo Alto</strong> and <strong>Fortinet</strong> firewalls.  
+      I’m building a strong foundation in automation tools like <strong>Python</strong> and <strong>Ansible</strong> to integrate network security with modern enterprise systems.  
+      My journey focuses on gaining deep, practical knowledge in both Cisco and multi-vendor environments to design and secure complex networks.</p>
     </div>
-  </main>
+
+    <!-- Welcome -->
+    <div class="card">
+      <h2>Welcome</h2>
+      <p>This page serves as an index for my <strong>20 Days | 20 Technologies Internship Challenge</strong>.  
+      Each day focuses on one networking or cybersecurity technology, with practical configurations and documentation to track my progress.</p>
+    </div>
+
+   <!-- Challenge Days -->
+<div class="card">
+  <h2>Challenge Days</h2>
+  <ul>
+    <li><a href="#">Day 01 — VMware ESXi install + Windows VM + RDP: Students create their first Windows VM, access via RDP.</a></li>
+    <li><a href="#">Day 02 — Ubuntu latest VM + SSH remote from India→Paris: Basic Linux provisioning + remote shell over WAN.</a></li>
+    <li><a href="#">Day 03 — ESXi Networking + Cisco IOS router: Each student VM placed in unique subnet; NAT + reachability.</a></li>
+    <li><a href="#">Day 04 — pfSense firewall VM: Setup WAN/LAN, static routes, and NAT for all student VMs.</a></li>
+    <li><a href="#">Day 05 — WireGuard VPN: Secure tunnel between Paris DC and India clients.</a></li>
+    <li><a href="#">Day 06 — OpenVPN: Site-to-site & client mode; compare with WireGuard.</a></li>
+    <li><a href="#">Day 07 — Tailscale Mesh VPN: Zero-config mesh across all students; subnet routing.</a></li>
+    <li><a href="#">Day 08 — FreeRADIUS + Captive Portal: Authentication for local users through pfSense.</a></li>
+    <li><a href="#">Day 09 — DNS/DHCP Server: Central DHCP scopes, custom internal DNS zones.</a></li>
+    <li><a href="#">Day 10 — Migrate to Proxmox: Import VMs, configure virtual bridge & VLAN-aware networking.</a></li>
+    <li><a href="#">Day 11 — MikroTik RouterOS: Create VLANs, NAT, static/dynamic routing; remote management.</a></li>
+    <li><a href="#">Day 12 — OSPF with Cisco + MikroTik: Dynamic routing in hybrid lab. Verify LSAs & routes.</a></li>
+    <li><a href="#">Day 13 — FRRouting (Linux Router): Replace Cisco with open-source router; redistribute routes.</a></li>
+    <li><a href="#">Day 14 — IDS/IPS – Suricata / Zeek: Deploy network monitoring + traffic inspection.</a></li>
+    <li><a href="#">Day 15 — Zabbix / Grafana / Prometheus: Centralized monitoring for ESXi, Proxmox, routers, VPNs.</a></li>
+    <li><a href="#">Day 16 — Ansible Automation: Automate VM config, IP setup, and user creation.</a></li>
+    <li><a href="#">Day 17 — Docker Networking Basics: Deploy small web app + reverse proxy to tie infra & dev.</a></li>
+    <li><a href="#">Day 18 — Proxmox Cluster + HA setup: Multi-node cluster; migrate VM live between nodes.</a></li>
+    <li><a href="#">Day 19 — Backups, Snapshots & Restore: Run complete backup policy; disaster-recovery drill.</a></li>
+    <li><a href="#">Day 20 — Final Integration Project: One cohesive infra: Proxmox + pfSense + MikroTik + Cisco + VPN + Monitoring. Students present design diagrams + live demo.</a></li>
+  </ul>
+</div>
+
+
+    <p style="text-align:center; margin-top:1rem;">Thank you for visiting my page!</p>
+  </div>
 
   <footer>
     &copy; 2025 Nikhil Rachcha. All rights reserved.
